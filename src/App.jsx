@@ -210,6 +210,11 @@ function App() {
               <div class="bg-white p-6 rounded-lg shadow-lg">
                 <h3 class="text-lg font-semibold mb-2">Broad Expertise</h3>
                 <p class="text-gray-700">
+                  <list>
+                    {["Evan", "Ben", "Maria", "Daniel"].map((name) => (
+                      <span key={name}>{name}</span>
+                    ))}
+                  </list>
                   Our diverse range of expertise allows us to cater to multiple
                   industries and areas.
                 </p>
