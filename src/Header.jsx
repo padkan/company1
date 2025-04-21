@@ -5,14 +5,16 @@ function Header() {
     <header className="mb-8 shadow">
       <div className="flex items-center justify-between px-4 py-4 mx-auto max-w-7xl">
         <div className="grid text-lg">
-          <Link to="/home" className="font-semibold">
+          <div className="hidden text-sm font-light md:block">
             Lars-Beratung.de
-          </Link>
-          <div className="text-sm font-light">
+          </div>
+          <div className="hidden text-sm font-light lg:block">
             Leitung | Analyse | Recherche | Strategie
           </div>
           <div className="my-1 text-sm font-bold">
-            خدمات مشاوره‌ای مالی لارس
+            <Link to="/home" className="font-semibold ">
+              خدمات مشاوره‌ای مالی لارس
+            </Link>
           </div>
         </div>
         <nav className="flex space-x-14">
